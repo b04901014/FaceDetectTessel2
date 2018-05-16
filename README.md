@@ -37,4 +37,4 @@ Go to http://${YourIp}:${YourPort}.
 
 **Refresh the page to see newer image, since the web is not responsive.**
 
-**Note the green LED will blink as the camera detects faces**
+**Note the green LED will blink as the camera detects faces.**
