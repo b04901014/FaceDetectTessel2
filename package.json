@@ -1,0 +1,25 @@
+{
+  "name": "FaceDetectionTessel2",
+  "version": "0.0.0",
+  "description": "Tessel project",
+  "main": "camera.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "opencv": "^6.0.0",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.0",
+    "socket.io-stream": "^0.9.1",
+    "tessel-av": "^0.19.0",
+    "tessel-led": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "www.github.com/tessel/t2-cli",
+  "keywords": [
+    "Tessel"
+  ],
+  "license": "MIT",
+  "readme": "A bare bones Tessel 2 blinky script."
+}
