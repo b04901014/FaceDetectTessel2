@@ -4,7 +4,7 @@ Project Name : FaceDetectTessel2 for NTUEE ESLab HW2
 
 Author : Li-Wei Chen
 
-Using Tessel2, USB Camera, Opencv, and Sockt.io to implement realtime face detection.
+Using tessel2, USB camera, opencv, and socket.io to implement realtime face detection.
 
 ## Build Packages
 
