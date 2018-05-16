@@ -25,7 +25,7 @@ t2 init
 ```
 Get your tessel2 and USB camera set.
 
-Get access to the access point of tessel2 (t2 ap -n $(tessel name) to create access point), and then check the ip address by ifconfig.
+Get access to the access point of tessel2 (t2 ap -n ${tessel name} to create access point), and then check the ip address by ifconfig.
 
 Change the ip address to the corresponding one for the server and tessel2, also you can choose a port of your favor.
 ```
