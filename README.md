@@ -15,6 +15,7 @@ Please see the report for implementation details.
 * [socket.io](https://github.com/socketio/socket.io)
 * [socket.io-client](https://github.com/socketio/socket.io-client)
 * [socket.io-stream](https://github.com/nkzawa/socket.io-stream)
+* [create-react-app](https://github.com/facebook/create-react-app)
 
 ## How to run
 
@@ -22,9 +23,15 @@ Please see the report for implementation details.
     ```
     git clone https://github.com/b04901014/FaceDetectTessel2.git
     
+    cd FaceDetectTessel2
+    
     npm install
 
     t2 init
+    
+    cd client
+    
+    npm install
     ```
 
 2. Connect the Tessel2 to your computer and USB camera to Tessel2.
@@ -35,20 +42,28 @@ Please see the report for implementation details.
     t2 wifi -n <SSID> -p <PWD> -s <PWD encryption>
     ```
 
-3. Get access to the access point of the Tessel2 
+4. Get access to the access point of the Tessel2 
     ```
     t2 ap -n ${tessel name} 
     ```
     Then check the ip address by ifconfig (inet addr of wlp2s0). It should be something like 192.168.1.xxx.
 
-4. Change the ip address to the corresponding one for the server.js and camera.js, also you can choose a port of your favor.
+5. Change the ip address to the corresponding one for the server.js and camera.js, also you can choose a port of your favor.
     ```
+    cd ../
+    
     node server.js
 
     t2 run camera.js
     ```
-
-5. Go to http://${YourIp}:${YourPort}.
+6. Run react
+    ```
+    cd client
+    
+    npm start
+    ```
+    
+7. Go to http://localhost:${ReactPort}.
 
     **Refresh the page to see newer image, since the web is not responsive.**
 
