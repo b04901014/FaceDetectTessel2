@@ -1,8 +1,8 @@
 {
-  "name": "FaceDetectionTessel2",
+  "name": "FaceDetectTessel2",
   "version": "0.0.0",
-  "description": "Tessel project",
-  "main": "camera.js",
+  "description": "project Name : FaceDetectTessel2 for NTUEE ESLab HW2",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.16.3",
     "opencv": "^6.0.0",
@@ -16,7 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "www.github.com/tessel/t2-cli",
+  "repository": "git://github.com/b04901014/FaceDetectTessel2.git",
   "keywords": [
     "Tessel"
   ],
