@@ -65,6 +65,4 @@ Please see the report for implementation details.
     
 7. Go to http://localhost:${ReactPort}.
 
-    **Refresh the page to see newer image, since the web is not responsive.**
-
-    **Note the green LED will blink as the camera detects faces.**
+**Note the green LED will blink as the camera detects faces.**
