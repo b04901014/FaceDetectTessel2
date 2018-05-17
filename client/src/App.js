@@ -11,7 +11,7 @@ class App extends Component {
     this._capture = this._capture.bind(this)
 	}
   _capture() {
-    fetch('http://192.168.1.198:8888/', {
+    fetch('http://192.168.1.160:8888/', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -25,7 +25,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    setInterval(this._capture, 200);
+    setInterval(this._capture, 100);
   }
 
   render() {
