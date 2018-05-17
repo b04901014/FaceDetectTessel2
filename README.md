@@ -45,6 +45,8 @@ Please see the report for implementation details.
 4. Get access to the access point of the Tessel2 
     ```
     t2 ap -n ${tessel name} 
+    
+    t2 provision
     ```
     Then check the ip address by ifconfig (inet addr of wlp2s0). It should be something like 192.168.1.xxx.
 
