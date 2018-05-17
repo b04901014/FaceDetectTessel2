@@ -24,6 +24,10 @@ class App extends Component {
     })
   };
 
+  componentDidMount() {
+    setInterval(this._capture, 200);
+  }
+
   render() {
     return (
       <div className="App">
