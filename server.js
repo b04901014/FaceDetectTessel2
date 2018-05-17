@@ -8,16 +8,26 @@ const ss = require('socket.io-stream');
 const pc = require('./cvdetect');
 const stream = require('stream');
 const path = require('path');
+const cors = require('cors')
 
 var file = new stream.PassThrough();
+var chunk;
+
+app.use(cors());
+
+file.on('data', (ck) => {
+  chunk = 'data:image/jpeg;base64,' + ck.toString('base64');
+});
 
 app.get('/', function(req, res) {
-  const head = {
-    'Content-Type': 'image/jpeg'
-  }
-  res.writeHead(200, head);
-  file.pipe(res);
+  res.jsonp({ result: chunk });
 });
+
+
+app.get('/hello', function(req, res) {
+  res.jsonp({ result: "Hello World" });
+});
+
 
 io.on('connection', (socket) => {
   ss(socket).on('putstream', function(stream) {
@@ -33,6 +43,6 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(8888, "192.168.1.198");
+server.listen(8888, "192.168.1.160");
 
 

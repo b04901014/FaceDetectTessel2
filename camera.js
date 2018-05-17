@@ -1,6 +1,6 @@
 const io = require('socket.io-client');
 var ss = require('socket.io-stream');
-var socket = io.connect("http://192.168.1.198:8888");
+var socket = io.connect("http://192.168.1.160:8888");
 var led = require('tessel-led');
 const av = require('tessel-av');
 const camera = new av.Camera({
